@@ -14,7 +14,7 @@ public class SumProductAverageTest {
 
     private static List<Double> extractAllDoubles(String output, String label) {
         Pattern p = Pattern.compile(
-                "^.*\\b" + Pattern.quote(label) + "\\b.*?(?:[:=])\\s*([\\d.Ee+-]+)\\s*$",
+                "^.*\\b" + Pattern.quote(label) + "\\b.*?([\\d.Ee+-]+)\\s*$",
                 Pattern.CASE_INSENSITIVE | Pattern.MULTILINE
         );
         Matcher m = p.matcher(output);
