@@ -14,7 +14,7 @@
  */
 
 import java.util.Scanner;
-
+// Test
 public class SumProductAverage {
     public static void main(String[] args) {
         // TODO
